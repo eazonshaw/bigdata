@@ -90,7 +90,7 @@ HBaseUtil.createTable(TABLE_NAME,columnList);
 
 * 创建完表之后，在 hbase 的 shell 可以看到建表成功：
 
-![img1]()
+![img1](https://github.com/eazonshaw/bigdata/blob/master/hbase/img/img1.png)
 
 ## 插入数据
 * 按列族插入数据
@@ -124,7 +124,7 @@ HBaseUtil.putRow(TABLE_NAME, "Tom", "score",
         Arrays.asList(new Pair<>("understanding","75"),new Pair<>("programing","82")));
 ```
 * 插入数据完成后，在 hbase 的 shell 可以看到插入后的数据：
-![img2]()
+![img2](https://github.com/eazonshaw/bigdata/blob/master/hbase/img/img2.png)
 
 ## 查询数据
 * 根据rowKey获取指定行的数据
@@ -150,7 +150,11 @@ public static Result getRow(String tableName, String rowKey) {
 ```java
 HBaseUtil.getRow(TABLE_NAME,"Tom")
 ```
+* 控制台输出
+```text
+keyvalues={Tom/info:class/1627823941550/Put/vlen=1/seqid=0, Tom/info:student_id/1627823941550/Put/vlen=14/seqid=0, Tom/score:programing/1627823941597/Put/vlen=2/seqid=0, Tom/score:understanding/1627823941597/Put/vlen=2/seqid=0}
+```
 
 # 参考
-* (入门 HBase )[https://www.jianshu.com/p/b23800d9b227]
-* (HBase Shell常用命令和基本操作)[http://c.biancheng.net/view/3587.html]
+* [入门 HBase ](https://www.jianshu.com/p/b23800d9b227)
+* [HBase Shell常用命令和基本操作](http://c.biancheng.net/view/3587.html)
