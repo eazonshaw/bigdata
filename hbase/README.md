@@ -154,6 +154,8 @@ HBaseUtil.getRow(TABLE_NAME,"Tom")
 ```text
 keyvalues={Tom/info:class/1627823941550/Put/vlen=1/seqid=0, Tom/info:student_id/1627823941550/Put/vlen=14/seqid=0, Tom/score:programing/1627823941597/Put/vlen=2/seqid=0, Tom/score:understanding/1627823941597/Put/vlen=2/seqid=0}
 ```
+## 完整数据展示
+![img3](https://github.com/eazonshaw/bigdata/blob/master/hbase/img/img3.png)
 
 # 参考
 * [入门 HBase ](https://www.jianshu.com/p/b23800d9b227)

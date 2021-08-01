@@ -23,22 +23,22 @@ public class HBaseApplication {
         HBaseUtil.putRow(TABLE_NAME, "Tom", "score",
                 Arrays.asList(new Pair<>("understanding","75"),new Pair<>("programing","82")));
         //Jerry
-//        HBaseUtil.putRow(TABLE_NAME, "Jerry", "info", "student_id", "20210000000002");
-//        HBaseUtil.putRow(TABLE_NAME, "Jerry", "info", "class", "1");
-//        HBaseUtil.putRow(TABLE_NAME, "Jerry", "score", "understanding", "85");
-//        HBaseUtil.putRow(TABLE_NAME, "Jerry", "score", "programing", "67");
-//        //Jack
-//        HBaseUtil.putRow(TABLE_NAME, "Jack", "info", "student_id", "20210000000003");
-//        HBaseUtil.putRow(TABLE_NAME, "Jack", "info", "class", "2");
-//        HBaseUtil.putRow(TABLE_NAME, "Jack", "score", "understanding", "80");
-//        HBaseUtil.putRow(TABLE_NAME, "Jack", "score", "programing", "80");
-//        //Rose
-//        HBaseUtil.putRow(TABLE_NAME, "Rose", "info", "student_id", "20210000000004");
-//        HBaseUtil.putRow(TABLE_NAME, "Rose", "info", "class", "2");
-//        HBaseUtil.putRow(TABLE_NAME, "Rose", "score", "understanding", "60");
-//        HBaseUtil.putRow(TABLE_NAME, "Rose", "score", "programing", "61");
+        HBaseUtil.putRow(TABLE_NAME, "Jerry", "info",
+                Arrays.asList(new Pair<>("student_id","20210000000002"),new Pair<>("class","1")));
+        HBaseUtil.putRow(TABLE_NAME, "Jerry", "score",
+                Arrays.asList(new Pair<>("understanding","85"),new Pair<>("programing","67")));
+        //Jack
+        HBaseUtil.putRow(TABLE_NAME, "Jack", "info",
+                Arrays.asList(new Pair<>("student_id","20210000000003"),new Pair<>("class","2")));
+        HBaseUtil.putRow(TABLE_NAME, "Jack", "score",
+                Arrays.asList(new Pair<>("understanding","80"),new Pair<>("programing","80")));
+        //Rose
+        HBaseUtil.putRow(TABLE_NAME, "Rose", "info",
+                Arrays.asList(new Pair<>("student_id","20210000000004"),new Pair<>("class","2")));
+        HBaseUtil.putRow(TABLE_NAME, "Rose", "score",
+                Arrays.asList(new Pair<>("understanding","60"),new Pair<>("programing","61")));
 //        //xiaoyizhen G20190343010243
-//        HBaseUtil.putRow(TABLE_NAME, "xiaoyizhen", "info", "student_id", "G20190343010243");
+        HBaseUtil.putRow(TABLE_NAME, "xiaoyizhen", "info", "student_id", "G20190343010243");
 
         //查询 xiaoyizhen 的数据
         System.out.println(HBaseUtil.getRow(TABLE_NAME,"Tom"));
